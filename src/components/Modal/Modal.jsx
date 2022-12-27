@@ -23,7 +23,6 @@ export class Modal extends Component {
   };
 
   render() {
-    console.log(this.props.largeImgUrl);
     return (
       <div className={css.Overlay} onClick={this.handleBackdrop}>
         <div className={css.Modal}>
