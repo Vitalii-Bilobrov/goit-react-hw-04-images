@@ -37,7 +37,7 @@ export class App extends Component {
             error: '',
           }));
         })
-        .catch(() => this.setState({ error: 'Something went wrong' }))
+        .catch(() => this.setState({ error: 'Something wrong' }))
         .finally(() => this.setState({ loading: false }));
     }
     if (prevState.error !== error) {
