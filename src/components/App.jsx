@@ -21,7 +21,7 @@ export class App extends Component {
   };
 
   componentDidUpdate(_, prevState) {
-    const { imageName, page, per_page, error } = this.state;
+    const { imageName, page, error } = this.state;
 
     if (imageName !== prevState.imageName || page !== prevState.page) {
       this.setState({ loading: true });
