@@ -5,7 +5,7 @@ export const Modal = ({ onImageClick, largeImgUrl, Alt }) => {
   useEffect(() => {
     const handleKeyDown = event => {
       if (event.code === 'Escape') {
-        onImageClick();
+        onImageClick('');
       }
     };
     window.addEventListener('keydown', handleKeyDown);
@@ -16,7 +16,7 @@ export const Modal = ({ onImageClick, largeImgUrl, Alt }) => {
 
   const handleBackdrop = event => {
     if (event.target === event.currentTarget) {
-      onImageClick();
+      onImageClick('');
     }
   };
 
